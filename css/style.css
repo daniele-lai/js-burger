@@ -27,6 +27,12 @@ main {
   padding: 30px;
 }
 
+#burger_name {
+  width: 80%;
+  border: none;
+  font-size: 25px;
+}
+
 .wrap_ingredients {
   display: flex;
   justify-content: space-between;
@@ -44,14 +50,48 @@ main {
   padding: 13px 0;
 }
 
+.li_ingredients img {
+  padding: 10px;
+  height: 100px;
+}
+
 .label_ingredients {
   display: flex;
   align-items: center;
 }
 
+.burger_stuff {
+  margin-left: 10px;
+
+}
+
+.add {
+  margin-left: 10px;
+  color: #D33359;
+}
+
+#discount {
+  width: 75%;
+  border-radius: 10px;
+  border: none;
+  background-color: #FFF5E2;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.btn_calculate {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
 
 #calculate {
-  display: block;
+  border-radius: 10px;
+  border: none;
+  height: 50px;
+  width: 100px;
+  background-color: #FDBB40;
+  font-size: 16px;
 }
 
 .title_coupon {
@@ -64,4 +104,5 @@ footer {
   display: flex;
   justify-content: space-between;
   padding: 21px;
+  font-size: 24px;
 }
