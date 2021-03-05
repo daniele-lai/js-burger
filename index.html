@@ -4,57 +4,78 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
   <title>Create Your Burger</title>
 </head>
 <body>
-  <header>
-    <h1>Create Your Burger</h1>
-  </header>
+  <div class="wrap">
+    <div class="demiwrap">
+      <header>
+        <h1>Create Your Burger</h1>
+      </header>
 
-  <main>
-    <input id="burger_name" type="text" placeholder="Mio Nome">
-    <h2>Ingredients</h2>
-    <ul>
-      <li>
-        <label for="cheese">Cheese
-          <input id="cheese" class="burger_stuff" type="checkbox" value="3">
-        </label>
-      </li>
-      <li>
-        <label for="egg">Egg
-          <input id="egg" class="burger_stuff" type="checkbox" value="4">
-        </label>
-      </li>
-      <li>
-        <label for="mustard">Mustard
-          <input id="mustard" class="burger_stuff" type="checkbox" value="5">
-        </label>
-      </li>
-      <li>
-        <label for="tomato">Tomato
-          <input id="tomato" class="burger_stuff" type="checkbox" value="2">
-        </label>
-      </li>
-      <li>
-        <label for="lettuce">Lettuce
-          <input id="lettuce" class="burger_stuff" type="checkbox" value="2">
-        </label>
-      </li>
-      <li>
-        <label for="ketchup">Ketchup
-          <input id="ketchup" class="burger_stuff" type="checkbox" value="1">
-        </label>
-      </li>
-    </ul>
-    <h3>Discount Coupon</h3>
-    <input id="discount" type="text">
-    <button id="calculate" type="button" name="button">Calculate</button>
-  </main>
+      <main>
+        <input class="mg20px" id="burger_name" type="text" placeholder="Mio Nome">
+        <h2>Ingredients</h2>
+        <div class="wrap_ingredients">
+          <div class="left">
+            <ul class="list_burger">
+              <li class="li_ingredients">
+                <img src="img/cheese.svg" alt="Cheese">
+                <label class="label_ingredients" for="cheese">Cheese
+                  <input id="cheese" class="burger_stuff" type="checkbox" value="3"><span class="add">add</span>
+                </label>
+              </li>
+              <li class="li_ingredients">
+                <img src="img/fried-egg.svg" alt="Fried Egg">
+                <label class="label_ingredients" for="egg">Egg
+                  <input id="egg" class="burger_stuff" type="checkbox" value="4"><span class="add">add</span>
+                </label>
+              </li>
+              <li class="li_ingredients">
+                <img src="img/mustard.svg" alt="Mustard">
+                <label class="label_ingredients" for="mustard">Mustard
+                  <input id="mustard" class="burger_stuff" type="checkbox" value="5"><span class="add">add</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+          <div class="right">
+            <ul class="list_burger2">
+              <li class="li_ingredients">
+                <img src="img/tomato.svg" alt="Tomato">
+                <label class="label_ingredients" for="tomato">Tomato
+                  <input id="tomato" class="burger_stuff" type="checkbox" value="2"><span class="add">add</span>
+                </label>
+              </li>
+              <li class="li_ingredients">
+                <img src="img/lettuce.svg" alt="Lettuce">
+                <label class="label_ingredients" for="lettuce">Lettuce
+                  <input id="lettuce" class="burger_stuff" type="checkbox" value="2"><span class="add">add</span>
+                </label>
+              </li>
+              <li class="li_ingredients">
+                <img src="img/ketchup.svg" alt="Ketchup">
+                <label class="label_ingredients" for="ketchup">Ketchup
+                  <input id="ketchup" class="burger_stuff" type="checkbox" value="1"><span class="add">add</span>
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <h3 class="title_coupon">Discount Coupon</h3>
+        <input id="discount" type="text">
+        <button id="calculate" type="button" name="button">Calculate</button>
+      </main>
 
-  <footer>
-    <span>Your Price</span>
-    <span id="sum">50€</span>
-  </footer>
+      <footer>
+        <span>Your Price</span>
+        <span id="sum">50€</span>
+      </footer>
+    </div>
+  </div>
   <script src="js/script.js" charset="utf-8"></script>
 </body>
 </html>

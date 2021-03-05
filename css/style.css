@@ -1,0 +1,67 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrap {
+  background-color: #FFF5E2;
+  font-family: 'Lato', sans-serif;
+}
+
+.mg20px {
+  margin-bottom: 20px;
+}
+
+.demiwrap {
+  width: 50%;
+  background-color: #fff;
+}
+
+header {
+  background-color: #FDBB40;
+  padding: 30px;
+}
+
+main {
+  padding: 30px;
+}
+
+.wrap_ingredients {
+  display: flex;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.list_burger, .list_burger2 {
+  list-style: none;
+  font-size: 18px;
+}
+
+.li_ingredients {
+  display: flex;
+  align-items: center;
+  padding: 13px 0;
+}
+
+.label_ingredients {
+  display: flex;
+  align-items: center;
+}
+
+
+#calculate {
+  display: block;
+}
+
+.title_coupon {
+  display: inline-block;
+}
+
+footer {
+  background-color: #D33359;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 21px;
+}
