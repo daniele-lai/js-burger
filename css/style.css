@@ -13,6 +13,10 @@
   margin-bottom: 20px;
 }
 
+.bold {
+  font-weight: 700;
+}
+
 .demiwrap {
   width: 50%;
   background-color: #fff;
@@ -21,6 +25,13 @@
 header {
   background-color: #FDBB40;
   padding: 30px;
+  position: relative;
+}
+
+header img {
+  position: absolute;
+  top: -17px;
+  right: -56px;
 }
 
 main {
